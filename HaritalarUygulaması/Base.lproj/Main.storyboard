@@ -1,24 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HaritalarUygulaması" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-dh-e1f">
+                                <rect key="frame" x="0.0" y="165" width="390" height="645"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İsim giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRQ-Bq-8ze">
+                                <rect key="frame" x="16" y="64" width="358" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notunuzu giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wh0-Ck-oV3">
+                                <rect key="frame" x="16" y="106" width="358" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5X9-dh-e1f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Sk-wt-hcB"/>
+                            <constraint firstItem="ZRQ-Bq-8ze" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="EG8-D5-Q3U"/>
+                            <constraint firstItem="wh0-Ck-oV3" firstAttribute="top" secondItem="ZRQ-Bq-8ze" secondAttribute="bottom" constant="8" id="ICV-KO-mRn"/>
+                            <constraint firstItem="ZRQ-Bq-8ze" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MGI-qB-r3g"/>
+                            <constraint firstItem="5X9-dh-e1f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ohl-2k-wvw"/>
+                            <constraint firstItem="ZRQ-Bq-8ze" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Our-aU-a3k"/>
+                            <constraint firstItem="5X9-dh-e1f" firstAttribute="top" secondItem="wh0-Ck-oV3" secondAttribute="bottom" constant="25" id="QG3-cI-bsn"/>
+                            <constraint firstItem="ZRQ-Bq-8ze" firstAttribute="trailing" secondItem="wh0-Ck-oV3" secondAttribute="trailing" id="VGU-3S-VWn"/>
+                            <constraint firstItem="wh0-Ck-oV3" firstAttribute="centerX" secondItem="5X9-dh-e1f" secondAttribute="centerX" id="VnM-BW-qgX"/>
+                            <constraint firstItem="ZRQ-Bq-8ze" firstAttribute="leading" secondItem="wh0-Ck-oV3" secondAttribute="leading" id="xL7-DO-KrD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="isimTextField" destination="ZRQ-Bq-8ze" id="iG3-3F-8d5"/>
+                        <outlet property="mapView" destination="5X9-dh-e1f" id="Xxr-du-oYC"/>
+                        <outlet property="notTextField" destination="wh0-Ck-oV3" id="Nq2-dy-YuU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="-28.436018957345969"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
