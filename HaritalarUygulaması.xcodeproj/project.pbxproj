@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		33A1B6E828DCA3E100DD3E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B6E728DCA3E100DD3E0B /* AppDelegate.swift */; };
 		33A1B6EA28DCA3E100DD3E0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B6E928DCA3E100DD3E0B /* SceneDelegate.swift */; };
-		33A1B6EC28DCA3E100DD3E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B6EB28DCA3E100DD3E0B /* ViewController.swift */; };
+		33A1B6EC28DCA3E100DD3E0B /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B6EB28DCA3E100DD3E0B /* MapsViewController.swift */; };
 		33A1B6EF28DCA3E100DD3E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A1B6ED28DCA3E100DD3E0B /* Main.storyboard */; };
 		33A1B6F228DCA3E100DD3E0B /* HaritalarUygulamas_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33A1B6F028DCA3E100DD3E0B /* HaritalarUygulamas_.xcdatamodeld */; };
 		33A1B6F428DCA3E200DD3E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A1B6F328DCA3E200DD3E0B /* Assets.xcassets */; };
 		33A1B6F728DCA3E200DD3E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A1B6F528DCA3E200DD3E0B /* LaunchScreen.storyboard */; };
+		33E2B8FD28DDA9B0006E5346 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2B8FC28DDA9B0006E5346 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33A1B6E428DCA3E100DD3E0B /* HaritalarUygulaması.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HaritalarUygulaması.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A1B6E728DCA3E100DD3E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A1B6E928DCA3E100DD3E0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		33A1B6EB28DCA3E100DD3E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33A1B6EB28DCA3E100DD3E0B /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		33A1B6EE28DCA3E100DD3E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33A1B6F128DCA3E100DD3E0B /* HaritalarUygulamas_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HaritalarUygulamas_.xcdatamodel; sourceTree = "<group>"; };
 		33A1B6F328DCA3E200DD3E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A1B6F628DCA3E200DD3E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A1B6F828DCA3E200DD3E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E2B8FC28DDA9B0006E5346 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				33A1B6E728DCA3E100DD3E0B /* AppDelegate.swift */,
 				33A1B6E928DCA3E100DD3E0B /* SceneDelegate.swift */,
-				33A1B6EB28DCA3E100DD3E0B /* ViewController.swift */,
+				33A1B6EB28DCA3E100DD3E0B /* MapsViewController.swift */,
 				33A1B6ED28DCA3E100DD3E0B /* Main.storyboard */,
 				33A1B6F328DCA3E200DD3E0B /* Assets.xcassets */,
 				33A1B6F528DCA3E200DD3E0B /* LaunchScreen.storyboard */,
 				33A1B6F828DCA3E200DD3E0B /* Info.plist */,
 				33A1B6F028DCA3E100DD3E0B /* HaritalarUygulamas_.xcdatamodeld */,
+				33E2B8FC28DDA9B0006E5346 /* ListViewController.swift */,
 			);
 			path = "HaritalarUygulaması";
 			sourceTree = "<group>";
@@ -141,9 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A1B6EC28DCA3E100DD3E0B /* ViewController.swift in Sources */,
+				33A1B6EC28DCA3E100DD3E0B /* MapsViewController.swift in Sources */,
 				33A1B6E828DCA3E100DD3E0B /* AppDelegate.swift in Sources */,
 				33A1B6F228DCA3E100DD3E0B /* HaritalarUygulamas_.xcdatamodeld in Sources */,
+				33E2B8FD28DDA9B0006E5346 /* ListViewController.swift in Sources */,
 				33A1B6EA28DCA3E100DD3E0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
